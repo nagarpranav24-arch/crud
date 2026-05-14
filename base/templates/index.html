@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nostrum quas excepturi assumenda eum molestiae eveniet corrupti odit provident optio sapiente sit fugit, recusandae aliquid, rerum atque omnis perferendis alias.</h3>
+    
+    <form method="post" action="">
+        {% csrf_token %}
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="name">
+        <label for="name">Email</label>
+        <input type="text" name="email" placeholder="email">
+        <label for="name">Message</label>
+        <input type="text" name="message" placeholder="message">
+        <button type="submit"> Submit</button>
+    </form>
 </body>
 </html>
