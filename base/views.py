@@ -5,15 +5,14 @@ from base.models import Person
 
 
 def index(request):
-    name = None
+    name= None
     email = None
     message = None
     if request.method == "POST":
         name =request.POST.get("name")
         email =request.POST.get("email")
         message =request.POST.get("message")
-    
-    person = Person.objects.create(name= name, email=email, message=message)
-    person.save()
+        person = Person.objects.create(name= name, email=email, message=message)
+        person.save()
 
     return render(request, "index.html")
