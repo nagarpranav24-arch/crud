@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="{% url 'homepage'%}">Home</a>
+    <a href="{% url 'person_details'%}">Person Details</a>
     
     <form method="post" action="">
         {% csrf_token %}
